@@ -1,46 +1,147 @@
-h1 {
-    color: #C0262C;
-    font-size: 2.5em;
-    /* 40/16=2.5 */
-    border-bottom: #C0262C solid thin;
-    padding-bottom: 7px;
-
+/*estrutura*/
+body {
+    width: 1000px;  /*Serve para aumentar a largura*/
+    margin-left: auto;  /*centraliza o conteudo para a esquerda*/
+    margin-right: auto; /*Centraliza o conteudo para a direita*/
+}
+header h1 {
+    width: 240px; /*Serve para aumentar a largura*/
+    float: left; /*Posiciona o conteudo para a esquerda do seu container*/
+    background-image: url(../multimidia/meu-amigo-cao-petshop-header.png); /*Define um plano de fundo usando uma imagem*/
+    background-repeat: no-repeat; /*Faz com que a imagem de fundo não se repita para preencher o fundo*/
+    background-position: center center; /*Centraliza a imagem de fundo caso não preencha todo o fundo*/
+    height: 200px; /*Edita a altura do conteudo*/
+    text-indent: -1000px; /*quantidade de espaço que deve ser aplicado na indentação da primeira linha de um bloco de texto*/
+    margin-bottom: 0px; /*Cria um espaçamento do conteudo para a parte de baixo*/
+}
+header #anuncio {
+    width: 510px; /*Serve para aumentar a largura*/
+    float: left; /*Posiciona o conteudo para a esquerda do seu container*/
+    margin: 80px auto auto; /*Define o espaçamento entre tres lados*/
+    padding-top: 0px; /*Cria um espacamento entre o conteudo para baixo*/
+}
+header section {
+    padding-top: 70px; /*Cria espçamento do conteudo para a parte de baixo*/
+}
+header section a[href="boletim.html"] /* permite que você aplique estilos apenas aos links que têm o atributo href definido como "boletim.html"*/ {
+    border: solid #c0262c thin; /*definir uma borda sólida com uma cor específica e uma largura.*/
+    padding: 15px; /*Define o espaçamento do conteudo e a borda de todos os lados.*/
+    border-radius: 15px; /*Edita as pontas de uma borda do conteudo*/
+    color: #c0262c; /*Define a cor do texto*/
+    text-decoration: none; /*remove qualquer estilo de decoração de texto que pode estar aplicado a um elemento.*/
+    font-size: 1.1em; /*Edita o tamanho da fonte de um conteudo*/
+}
+header section p {
+    color: #999999; /*Edita a cor do texto para cinza*/
+    margin: 33px auto 7px; /*Edita as margens de um conteudo para os lados definidos*/
+}
+header section figure {
+    width: 100%; /*Edita o tamanho de um conteudo*/
+    margin: 0px; /*define o espaço externo ao redor de um elemento. */
+}
+header section figure a {
+    padding: 25px 5px 0; /*Determina o espaçamento entre o conteudo e as bordas em três lados*/
+    border: none; /*Retira qualquer borda. Não tera bordas visiveis*/
+}
+header section figure a:first-child {
+    padding: 25px 5px 0 0; /*Determina o espaçamento entre o conteudo e as bordas em três lados*/
+}
+header section figure a:last-child {
+    padding: 25px 0 0 5px; /*Determina o espaçamento entre o conteudo e as bordas em três lados*/
+}
+/*estrutura de navegação*/
+nav {
+    background-color: #000; /*Define que o fundo do conteudo sera preto*/
+    overflow: auto;  /*controlar o comportamento de conteúdo que excede as dimensões de seu contêiner.*/
+    clear: both; /*emento, você está garantindo que esse elemento será exibido abaixo de qualquer elemento flutuante que esteja posicionado à esquerda ou à direita.*/
+    margin-top: 10px; /*Define o espaço externo da parte de baixo do conteudo*/
+}
+nav ul {
+    list-style: none; /*emove qualquer estilo padrao tipo pontos, numeros de uma lista não ordenada*/
+    padding-left: 0px; /*Define o espaçamento entre a borda e o lado esquerdo do conteudo*/
+    margin-top: 1px; /*Define o espaço externo da parte de cima do conteudo*/
+}
+nav ul li {
+    float: left; /*Posiciona o conteudo para a esquerda do seu container*/
+}
+nav ul a {
+    color: #fff; /*Altera a cor da fonte*/
+    text-decoration: none; /*É utilizado para remover qualquer decoração padrão de uma fonte ou texto*/
+    font-size: 1.2em; /*Aumenta o tamanho da fonte do texto*/
+    padding: 8px 50px; /*Aumenta o espacamento do conteudo das bordas de dois lados*/
+    line-height: 2em; /*Configura a altura da linha para ser o dobro do tamanho da fonte do elemento*/
 }
 
-h2 {
-    font-size: 1.75em;
-    /* 28/16=1.75 */
-    background: #C0262C url(../multimidia/back-bolinha.gif) repeat top center;
-    color: #fff;
-    letter-spacing: .1em;
-    padding: 7px;
-    width: 316px;
+/*estrutura página inicial*/
+#inicial aside {
+    width: 230px; /*Aumenta a largura do conteudo*/
+    float: left; /*Posiciona o conteudo para a esquerda do seu container*/
+    margin-top: 30px; /*Define o espacamento externo do conteudo para cima*/
+} 
+#inicial main {
+    width: 490px; /*Aumenta a largura do conteudo*/
+    float: left; /*Posiciona o conteudo para a esquerda do seu container*/
+    margin: 30px 25px 10px; /*Aumenta as margens do conteudo externo para os lados definidos*/
+}
+/*rodapé*/
+footer {
+    clear: both; /*Faz com que o elemento se mova para a proxima linha, abaixo de qualquer elemento flutuante que esteja a esquerda ou a direita*/
+    border-top: 7px solid #999; /*Define a borda superior de um elemento*/
+    background-color: #000; /*Define que a cor de funo sera preta*/
+    color: #fff; /*Define que a cor do texto sera branca*/
+    text-align: center; /*Centraliza o texto para o centro*/
+    padding: 10px; /*Define o espaçamento do conteudo e a borda*/
+}
+footer p {
+    margin: 0px; /*Define o espaçamento externo do conteudo em todos os lados*/
+}
+/*Define o estilo de links <a> que estão dentro da ID especifica*/
+#inicial a[href="index.html"],
+#quemSomos a[href="quem-somos.html"],
+#produtos a[href="produtos.html"],
+#banhoEtosa a[href="banho-e-tosa.html"],
+#curiosidades a[href="curiosidades.html"] {
+    background-color:#c0262c; /*Define a cor de fundo como vermelho*/
 }
 
-p {
-    font-size: 1.1em;
-    line-height: 1.3em;
-    text-align: justify;
+/* Textos da área principal */
+main h1 {
+    color: #c0262c; /*Define a cor do texto como vermelho*/
+    font-size: 2.5em; /* 40/16=2.5*/
+    /*Aumenta o tamanho da fonte*/
+    border-bottom: #c0262c solid thin; /*Define a borda inferior com um estilo específico.*/
+    padding-bottom: 7px; /*Define o espaçamento entre o conteudo e a borda da parte de baixo*/
 }
-
-p:first-line {
-    font-size: 1.17em;
-    font-variant: small-caps;
-    font-weight: bolder;
-    font-style: italic;
+main h2 {
+    font-size: 1.75em; /* 28/16=1; 1.75 */
+    background: #c0262c url(../multimidia/back-bolinha.gif) repeat top center; /*Define que o fundo é uma imagem com um link, repete a imagem, centraliza para cima e muda a cor para vermelho*/
+    color: #fff; /*Autera a cor da fonte para branco*/
+    letter-spacing: .1em; /*Autera o espaçamento entre as letras do texto*/
+    padding: 7px; /*Aumenta o espaçamento entre o conteudo e a borda*/
+    width: 316px; /*Aumenta a largura do conteudo*/
 }
-
-hr {
-    border-color: #C0262C;
+main p {
+    font-size: 1.1em; /*Aumenta a fonte do conteudo*/
+    line-height: 1.3em; /*Define a altura da linha de texto em um elemento*/
+    text-align: justify; /*Ele alinha as colunas de cada texto*/
+}
+main h2 + p:first-line {
+    font-size: 1.17em; /*Aumenta o tamanho da fonte*/
+    font-variant: small-caps; /*Aplica tipografias especificas ao texto*/
+    font-weight: bolder; /*Define a largura da fonte de um texto*/
+    font-style: italic; /*Edita o estilo da fonte, neste*/
+}
+main hr {
+    border-color: #c0262c;
 }
 
 body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-/*página produtos - tabela */
+/*página produtos - tabela*/
 
-#produtos table {
+#produtos table{
     width: 600px;
     margin: 50px auto 30px;
     text-align: center;
@@ -53,34 +154,62 @@ body {
 }
 
 #produtos caption {
-    background-color: #999; 
+    background-color: #999;
     color: #fff;
-    padding: 15px 0; /* aumenta o espaçamento entre o conteudo e a borda */
+    padding: 15px 0;
     font-size: 1.5em;
 }
 
 #produtos td[colspan] {
-    font-style: italic; /*edita o estilo da fonte*/
+    font-style: italic;
     font-weight: bold;
     color: #999;
 }
 
 #produtos tr:hover {
-    background-color: #feff76;
+    background-color: #FEFF76;
 }
 
-/*página boletim - formulario */
-
-form {
+/*pagina boletim - formulario*/
+form{
     background-color: #999;
     margin: 30px 0;
     padding: 20px;
     border-radius: 0 15px;
 }
 
+label {
+    display: block;
+    margin-top: 7px;
+    float: left;
+    width: 60px;
+}
+input#nome, input#email {
+    background-color: transparent;
+    border: none;
+    border-bottom: #000 solid 1px;
+    font-size: 1.2em;
+    color: #fff;
+    width: 800px;
+}
+::-webkit-input-placeholder { /* Chrome/safari/Opera */
+    color: #ddd;
+    font-style: italic;
+    font-size: .8em;
+}
+::-moz-placeholder { /* Firefox */
+    color: #ddd;
+    font-style: italic;
+    font-size: .8em;    
+}
+::-ms-input-placeholder { /* IE */
+    color: #ddd;
+    font-style: italic;
+    font-size: .8em;
+}
 input[type="submit"] {
     background-color: #C0262C;
-    background: linear-gradient(to bottom, #6b1516 0%,#C0262C 30%, #C0262C 70%, #6b1516 100%);
+    background: linear-gradient(to bottom, #6b1516 0%,#C0262C 30%,#C0262C 70%,#6b1516 100%);
     border: none;
     border-radius: 30px;
     font-size: 1.2em;
@@ -91,115 +220,140 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-label {
-    display: block;
-    margin-top: 7px;
-    float: left;
-    width: 60px;
-}
-
-input#nome, input#email {
-    background-color: transparent;
-    border: none;
-    border-bottom: #000 solid 1px;
-    font-size: 1.2em;
-    color: #fff;
-    width: 800px;
-}
-
-::-webkit-input-placeholder { /* Chrome/Safari/Opera*/ 
-    color: #ddd;
-    font-style: italic;
-    font-size: .8em;
-}
-
-::-moz-placeholder { /* Firefox */
-    color: #ddd;
-    font-style: italic;
-    font-size: .8em;
-}
-
-:-ms-input-placeholder { /* IE */
-    color: #ddd;
-    font-style: italic;
-    font-size: .8em;
-}
-
-/* página banho e tosa - formulario*/
-
+/* página banho e tosa - formulário */
 #banhoEtosa fieldset {
     background-color: #fff;
     border: none;
     border-radius: 0 15px;
     margin-bottom: 20px;
 }
-
-#banhoEtosa fieldset legend {
-    background-color: #C0262C;
+#banhoEtosa fieldset legend{
+    background-color: #c0262c;
     color: #fff;
     font-weight: bold;
     letter-spacing: .05em;
     padding: 10px;
     margin-left: -13px;
 }
-
 #banhoEtosa fieldset label {
     display: block;
     margin-top: 7px;
     float: left;
     width: 115px;
 }
-#banhoEtosa fieldset input[type="text"],
-#banhoEtosa fieldset input[type="email"] {
+#banhoEtosa fieldset input [type="text"],
+#banhoEtosa fieldset input [type="email"] {
     border: none;
     border-bottom: #000 solid 1px;
     font-size: 1.2em;
     color: #000;
     width: 770px;
 }
-
 #banhoEtosa fieldset textarea {
     width: 770px;
     height: 100px;
-    font-size: 1,2em;
-    border: #000 solid 1px; 
+    font-size: 1.2em;
+    border: #000 solid 1px;
 }
-
 #banhoEtosa fieldset label.labelSimples {
     display: inline;
     float: none;
 }
-
 #banhoEtosa p {
     text-align: left;
 }
-
-#banhoEtosa p::first-line {
+#banhoEtosa p:first-line {
     font-size: inherit;
     font-variant: inherit;
     font-weight: inherit;
     font-style: inherit;
 }
-
 #banhoEtosa main h2 {
-    background:  #FEF84F url(../multimidia/postit.jpg) no-repeat top left;
+    background: #FEF84F url(../multimidia/postit.jpg) no-repeat top left;
     color: #000;
-    /* padding para cada um dos 4 lados tamanho do postit: 277x185px */
+    padding: 35px;
+    /*padding: 35 para cada um dos 4 lados 
+    tamanho do postit: 277x185px */
     width: 207px;
     /* 35+35=70 > 277-70=207 */
     height: 115px;
-    /* 35+35=70 > 185-70=115*/
+    /* 35+35=70 > 185-75=115 */
     font-size: 1.3125em;
-    /*21/16=1,3125em*/
+    /* 21/16=1.3125em */
     letter-spacing: .07em;
 }
-
-/* página quem somos */
-
+/*página quem somos*/
 #quemSomos main img {
     float: left;
     margin: 0 20px 20px 0;
     padding: 10px;
-    border: solid #C0262C thin;
+    border: solid #c0262c thin;
     background-color: #fff;
 }
+/*pagina obrigado*/
+#obrigado main p img {
+    float: left;
+    margin: 0 20px 20px 0;
+    padding: 10px;
+    border: solid #c0262c 1px;
+    background-color: #fff;
+}
+#destaqueObrigado {
+    position: relative;
+    border: solid #c0262c 1px;
+    border-radius: 0 25px;
+    padding: 5px 25px;
+    margin: 20px 0;
+}
+#obrigado #lacinho {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+/*transição em caixas - 3caixas de 163x230 */
+.anuncioAnime {
+    margin: 0 0 10px; padding: 0;
+    overflow: auto;
+}
+.anuncioAnime .boxAnuncio {
+    width: 163px; height: 230px;
+    border-bottom: solid thin #c0262c;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.anuncioAnime .boxAnuncio p {
+    text-align: center;
+    font-size: .95em;
+    line-height: 1.3em;
+    background-color: rgba(255, 255, 255, 1);
+    border-left: solid thin #c0262c;
+    border-right: solid thin #c0262c;
+    margin: 0;
+    padding: 7px 15px;
+    position: absolute;
+    bottom: -80px; left: 0;
+    transition: 1s linear 0.1s; cursor: default;
+}
+.anuncioAnime .boxAnuncio p:first-line {
+    font-size: 1.1em;
+    font-variant:inherit;
+    font-style: normal;
+    font-weight: bolder;
+    color: #c0262c;
+    padding: 0;
+}
+.anuncioAnime .boxAnuncio p:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    bottom: 0;
+}
+/* controle de áudio */
+aside audio {width: 230px;}
+
+/* controle vídeo */
+aside video {width: 230px;}

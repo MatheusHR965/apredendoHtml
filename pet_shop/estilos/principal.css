@@ -129,22 +129,22 @@ main h2 + p:first-line {
     font-size: 1.17em; /*Aumenta o tamanho da fonte*/
     font-variant: small-caps; /*Aplica tipografias especificas ao texto*/
     font-weight: bolder; /*Define a largura da fonte de um texto*/
-    font-style: italic; /*Edita o estilo da fonte, neste*/
+    font-style: italic; /*Edita o estilo da fonte, neste caso é o estilo Italico*/
 }
 main hr {
-    border-color: #c0262c;
+    border-color: #c0262c; /*Autera a cor da borda*/
 }
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif; /*Define a fonte do texto de forma mais aprofundada*/
 }
 
 /*página produtos - tabela*/
 
 #produtos table{
-    width: 600px;
-    margin: 50px auto 30px;
-    text-align: center;
+    width: 600px; /*Edita a largura do conteudo*/
+    margin: 50px auto 30px; /*Edita o expaçamento dos lados definidos*/
+    text-align: center; /*Move o texto para o centro*/
     border-collapse: collapse;
 }
 

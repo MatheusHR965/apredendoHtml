@@ -145,133 +145,133 @@ body {
     width: 600px; /*Edita a largura do conteudo*/
     margin: 50px auto 30px; /*Edita o expaçamento dos lados definidos*/
     text-align: center; /*Move o texto para o centro*/
-    border-collapse: collapse;
+    border-collapse: collapse; /*é usada com tabelas HTML para controlar como as bordas das células são exibidas*/
 }
 
 #produtos th, #produtos td {
-    border: #999 solid 1px;
-    padding: 5px;
+    border: #999 solid 1px; /*Altera a cor da borda e aumenta em 1 pixel*/
+    padding: 5px; /*Cria um espaçamento de 5 pixel entre o conteudo e as bordas do site*/
 }
 
 #produtos caption {
-    background-color: #999;
-    color: #fff;
-    padding: 15px 0;
-    font-size: 1.5em;
+    background-color: #999; /*Altera a cor de fundo para cinza*/
+    color: #fff; /*Altera a cor do texto*/
+    padding: 15px 0; /*Aumenta o espaçamento do conteudo e as bordas em 15 pixels*/
+    font-size: 1.5em; /*Altera o tamanho e o espaçamento da fonte*/
 }
 
 #produtos td[colspan] {
-    font-style: italic;
-    font-weight: bold;
-    color: #999;
+    font-style: italic; /*Altera o tipo da fonte do texto para italic*/
+    font-weight: bold; /*Aumenta a expessura do texto. O bold aymenta em 700 pixels*/
+    color: #999; /*Altera a cor da fonte para cinza*/
 }
 
 #produtos tr:hover {
-    background-color: #FEFF76;
+    background-color: #FEFF76; /*Altera a cor de fundo para amarelo*/
 }
 
 /*pagina boletim - formulario*/
 form{
-    background-color: #999;
-    margin: 30px 0;
-    padding: 20px;
-    border-radius: 0 15px;
+    background-color: #999; /*altera a cor de fundo para cinza*/
+    margin: 30px 0; /*Aumenta o espaçamento externo do conteudo em 30 pixels para a esquerda*/
+    padding: 20px; /*Altera o espaçamento entre o conteudo e as podas em 20px todos os lados*/
+    border-radius: 0 15px; /*Arredonda as pontas superior direito e inferior esquerda*/
 }
 
 label {
-    display: block;
-    margin-top: 7px;
-    float: left;
+    display: block; /*Define que o elemento deve ser exibido como um bloco*/
+    margin-top: 7px; /*Aumenta o espaçamento externo do conteudo em 7pixel para cima*/
+    float: left; /*Posiciona o conteudo a esquerda do seu container pai*/
     width: 60px;
 }
 input#nome, input#email {
-    background-color: transparent;
-    border: none;
-    border-bottom: #000 solid 1px;
-    font-size: 1.2em;
-    color: #fff;
-    width: 800px;
+    background-color: transparent; /*Define que a cor de fundo de um elemento seja transparente*/
+    border: none; /*Retira as bordas do conteudo*/
+    border-bottom: #000 solid 1px; /*Edita como sera a borda inferior do conteudo*/
+    font-size: 1.2em; /*Edita o tamanho e o epaçamento do texto*/
+    color: #fff; /*altera a cor da fonte para branco*/
+    width: 800px; /*Aumenta a largura do conteudo*/
 }
 ::-webkit-input-placeholder { /* Chrome/safari/Opera */
-    color: #ddd;
-    font-style: italic;
-    font-size: .8em;
+    color: #ddd; /*Altera a cor da fonte para branco*/
+    font-style: italic; /*Altera o estilo da fonte para italic*/
+    font-size: .8em; /*Aumenta o tamanho da fonte*/
 }
 ::-moz-placeholder { /* Firefox */
-    color: #ddd;
-    font-style: italic;
-    font-size: .8em;    
+    color: #ddd; /*altera a cor da fonte*/
+    font-style: italic; /*altera o estilo da fonte para italic*/
+    font-size: .8em; /*aumenta o tamanho da fonte de acordo com seu elemento pai*/
 }
 ::-ms-input-placeholder { /* IE */
-    color: #ddd;
-    font-style: italic;
-    font-size: .8em;
+    color: #ddd; /*Altera a cor da fonte para cinza*/
+    font-style: italic; /*Altera o estilo da fonte para italic*/
+    font-size: .8em; /*aumenta o tamanho da fonte de acordo do seu elemento pai*/
 }
 input[type="submit"] {
-    background-color: #C0262C;
-    background: linear-gradient(to bottom, #6b1516 0%,#C0262C 30%,#C0262C 70%,#6b1516 100%);
-    border: none;
-    border-radius: 30px;
-    font-size: 1.2em;
-    color: #fff;
-    padding: 10px 30px;
-    margin: 20px 0;
-    text-shadow: 2px 2px 5px #000;
-    cursor: pointer;
+    background-color: #C0262C; /*Altera a cor de fundo*/
+    background: linear-gradient(to bottom, #6b1516 0%,#C0262C 30%,#C0262C 70%,#6b1516 100%); /*Adiciona um degrade para o botao*/
+    border: none; /*Retira as bordas*/
+    border-radius: 30px; /*arredonda as pontas do conteudo em 30pixels*/
+    font-size: 1.2em; /*Aumenta o tamanho da fonte e o espaçamento*/
+    color: #fff; /*Altera a cor da fonte para branco*/
+    padding: 10px 30px; /*Aumenta o espaçamento entre o conteudo e as bordas*/
+    margin: 20px 0; /*Altera o espaçamento externo do conteudo*/
+    text-shadow: 2px 2px 5px #000; /*adiciona um sombreamento na fonte*/
+    cursor: pointer; /*altera o cursor quando passar o mouse em cima do botao*/
 }
 
 /* página banho e tosa - formulário */
 #banhoEtosa fieldset {
-    background-color: #fff;
-    border: none;
-    border-radius: 0 15px;
-    margin-bottom: 20px;
+    background-color: #fff; /*Altera a cor de fundo para branco*/
+    border: none; /*Retira as bordas do conteudo*/
+    border-radius: 0 15px; /*arredonda as pontas donteudo*/
+    margin-bottom: 20px; /*Altera as margens da parte de baixo*/
 }
 #banhoEtosa fieldset legend{
-    background-color: #c0262c;
-    color: #fff;
-    font-weight: bold;
-    letter-spacing: .05em;
-    padding: 10px;
-    margin-left: -13px;
+    background-color: #c0262c; /*Altera a cor de fundo para vermelho*/
+    color: #fff; /*Altera a cor do texto para branco*/
+    font-weight: bold; /*Altera a largura da fonte*/
+    letter-spacing: .05em; /*Aumenta o espaçamento entre o texto*/
+    padding: 10px; /*Aumenta o espaçamento entre o conteudo e as bordas*/
+    margin-left: -13px; /*Altera o tamanho da borda externa do conteudo*/
 }
 #banhoEtosa fieldset label {
-    display: block;
-    margin-top: 7px;
-    float: left;
-    width: 115px;
+    display: block; /*Define que o elemento deve se comportar como um bloco*/
+    margin-top: 7px; /*altera o espaçamento externo da parte de cima*/
+    float: left; /*Posiciona o elemento á esquerda dentro de seu container pai*/
+    width: 115px; /*Aumenta a largura do elemento*/
 }
 #banhoEtosa fieldset input [type="text"],
 #banhoEtosa fieldset input [type="email"] {
-    border: none;
-    border-bottom: #000 solid 1px;
-    font-size: 1.2em;
-    color: #000;
-    width: 770px;
+    border: none; /*Retira as bordas do elemento*/
+    border-bottom: #000 solid 1px; /*Altera o espaçamento externo do celemento na parte de baixo*/
+    font-size: 1.2em; /*Altera o tamanho da fonte de texto*/
+    color: #000; /*Altera a cor do elemento para preto*/
+    width: 770px; /*Altera a largura do elemento*/
 }
 #banhoEtosa fieldset textarea {
-    width: 770px;
-    height: 100px;
-    font-size: 1.2em;
-    border: #000 solid 1px;
+    width: 770px; /*Altera a largura do elemento*/
+    height: 100px; /*Altera o tamanho do elemento*/
+    font-size: 1.2em; /*Altera o tamanho da fonte do conteudo*/
+    border: #000 solid 1px; /*Adiciona uma borda de 1 pixel da cor preta*/
 }
 #banhoEtosa fieldset label.labelSimples {
-    display: inline;
-    float: none;
+    display: inline; /*Define que um elemento deve ser exibido como um elemento inline. Não quebra linha e e nao em largura e altura definida*/
+    float: none; /*remover o comportamento de flutuação de um elemento.*/
 }
 #banhoEtosa p {
-    text-align: left;
+    text-align: left; /*Alinha o texto para a esquerda*/
 }
 #banhoEtosa p:first-line {
-    font-size: inherit;
-    font-variant: inherit;
-    font-weight: inherit;
-    font-style: inherit;
+    font-size: inherit; /* usadas para fazer com que um elemento herde esses valores de seu elemento pai.*/
+    font-variant: inherit;  /* usadas para fazer com que um elemento herde esses valores de seu elemento pai.*/
+    font-weight: inherit;  /* usadas para fazer com que um elemento herde esses valores de seu elemento pai.*/
+    font-style: inherit;  /* usadas para fazer com que um elemento herde esses valores de seu elemento pai.*/
 }
 #banhoEtosa main h2 {
-    background: #FEF84F url(../multimidia/postit.jpg) no-repeat top left;
-    color: #000;
-    padding: 35px;
+    background: #FEF84F url(../multimidia/postit.jpg) no-repeat top left; /*adiciona uma imagem para não repetir, cima e esquerda e altera a cor para amarelo*/
+    color: #000; /*Altera a cor do texto para preto*/
+    padding: 35px; /*Aumenta o espaçamento entre o elemento e a borda enm 35 pixels*/
     /*padding: 35 para cada um dos 4 lados 
     tamanho do postit: 277x185px */
     width: 207px;

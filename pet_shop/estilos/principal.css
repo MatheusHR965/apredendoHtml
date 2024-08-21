@@ -1,10 +1,10 @@
 /*estrutura*/
-body {
+body /*Esta sendo aplicado em todos os aquivos com body*/ {
     width: 1000px;  /*Serve para aumentar a largura*/
     margin-left: auto;  /*centraliza o conteudo para a esquerda*/
     margin-right: auto; /*Centraliza o conteudo para a direita*/
 }
-header h1 {
+header h1 /*Aplica em todos os headers e os h1*/ {
     width: 240px; /*Serve para aumentar a largura*/
     float: left; /*Posiciona o conteudo para a esquerda do seu container*/
     background-image: url(../multimidia/meu-amigo-cao-petshop-header.png); /*Define um plano de fundo usando uma imagem*/
@@ -14,7 +14,7 @@ header h1 {
     text-indent: -1000px; /*quantidade de espaço que deve ser aplicado na indentação da primeira linha de um bloco de texto*/
     margin-bottom: 0px; /*Cria um espaçamento do conteudo para a parte de baixo*/
 }
-header #anuncio {
+header #anuncio /*Altera todos os header e um id anuncio na pagina index.html*/ {
     width: 510px; /*Serve para aumentar a largura*/
     float: left; /*Posiciona o conteudo para a esquerda do seu container*/
     margin: 80px auto auto; /*Define o espaçamento entre tres lados*/
@@ -284,69 +284,74 @@ input[type="submit"] {
 }
 /*página quem somos*/
 #quemSomos main img {
-    float: left;
-    margin: 0 20px 20px 0;
-    padding: 10px;
-    border: solid #c0262c thin;
-    background-color: #fff;
+    float: left; /*Posiciona o elemento para o lado esquerdo da tela*/
+    margin: 0 20px 20px 0; /*Edita o espaçamento externo do elemento*/
+    padding: 10px; /*Edita o espaçamento entre o conteudo e as bordas*/
+    border: solid #c0262c thin; /*Cria uma borda da cor vermelha no conteudo*/
+    background-color: #fff; /*Altera a cor de fundo para branco*/
 }
 /*pagina obrigado*/
 #obrigado main p img {
-    float: left;
-    margin: 0 20px 20px 0;
-    padding: 10px;
-    border: solid #c0262c 1px;
-    background-color: #fff;
+    float: left; /*Posiciona o elemento para o lado esquerdo da tela*/
+    margin: 0 20px 20px 0; /*Edita o espaçamento externo do elemento*/
+    padding: 10px; /*Edita o espaçamento entre o conteudo e as bordas*/
+    border: solid #c0262c 1px; /*Cria uma borda da cor vermelha no conteudo*/
+    background-color: #fff; /*Altera a cor de fundo para branco*/
 }
 #destaqueObrigado {
-    position: relative;
-    border: solid #c0262c 1px;
-    border-radius: 0 25px;
-    padding: 5px 25px;
-    margin: 20px 0;
+    position: relative; /*Posiciona o elemento em relação a posição original*/
+    border: solid #c0262c 1px;  /*Cria uma borda da cor vermelha no conteudo*/
+    border-radius: 0 25px; /*Arredonda as pontas da borda do conteudo*/
+    padding: 5px 25px; /*Edita o espaçamento entre o conteudo e as bordas*/
+    margin: 20px 0; /*Edita o expaçameto externo do conteudo*/
 }
 #obrigado #lacinho {
-    position: absolute;
-    top: -20px;
-    right: -20px;
+    position: absolute; /*Posiciona o conteudo de forma absoluta*/
+    top: -20px; /*Está usando em conjunto com o position para posicionar o conteudo em relação ao seu elemento pai*/
+    right: -20px; /*é usada para posicionar um elemento de forma absoluta em relação à borda direita de seu contêiner pai.*/
+
+    /*Especifica para qual navegador será aplicado*/
     -webkit-transform: rotate(30deg);
     -moz-transform: rotate(30deg);
     -ms-transform: rotate(30deg);
     -o-transform: rotate(30deg);
-    transform: rotate(30deg);
+    transform: rotate(30deg); /*Aplica varias rotações para cada parte, definindo rotação, escala, inclinação, etc...*/
 }
 /*transição em caixas - 3caixas de 163x230 */
 .anuncioAnime {
-    margin: 0 0 10px; padding: 0;
-    overflow: auto;
+    margin: 0 0 10px;  /*Altera o expaçamento externo do conteudo em apenas um dos lados*/
+    padding: 0; /*Não altera o nada o expaçamento entre o conteudo e a borda*/
+    overflow: auto; /*Controlá como o conteudo será exibido. Adiciona barras de rolagens ao elemento*/
 }
 .anuncioAnime .boxAnuncio {
-    width: 163px; height: 230px;
-    border-bottom: solid thin #c0262c;
-    float: left;
-    position: relative;
-    overflow: hidden;
+    width: 163px; height: 230px; /*Está alterando a altura em 230 pixel e a largura em 163 pixels*/
+    border-bottom: solid thin #c0262c; /*Está definindo a borda inferior de um elemento e editando sua largura e cor*/
+    float: left; /*Está movendo o conteudo exibido para a esquerda*/
+    position: relative; /*É usado para posicionar um elemento em relação a sua posição original*/
+    overflow: hidden; /*Está controlando como o conteudo que ultrapassa a area será tratado*/
 }
 .anuncioAnime .boxAnuncio p {
-    text-align: center;
-    font-size: .95em;
-    line-height: 1.3em;
-    background-color: rgba(255, 255, 255, 1);
-    border-left: solid thin #c0262c;
+    text-align: center; /*Alinha o texto para o centro*/
+    font-size: .95em; /*Altera o tamnaho da fonte*/
+    line-height: 1.3em; /*Está editando o espaçamento entre as linhas do texto*/
+    background-color: rgba(255, 255, 255, 1); /*Define como será a cor de fundo com RGB*/
+
+    /*Está definindo como sera tratado as bordas da esquerda e direita*/
+    border-left: solid thin #c0262c; 
     border-right: solid thin #c0262c;
-    margin: 0;
-    padding: 7px 15px;
-    position: absolute;
-    bottom: -80px; left: 0;
-    transition: 1s linear 0.1s; cursor: default;
+    margin: 0; /*Está removendo todas as margens ao redor do elemento*/
+    padding: 7px 15px; /*altera o espaçamento entre o conteudo e as bordas*/
+    position: absolute; /*Define que a posição em relação ao seu container de referencia mais proximo*/
+    bottom: -80px; left: 0; /*Está agindo em conjunto ao position, alterando seus pixels e posicionamento*/
+    transition: 1s linear 0.1s; cursor: default; /*Está definindo uma transição suave quando a prorpiedade do elemento for mudada*/
 }
 .anuncioAnime .boxAnuncio p:first-line {
-    font-size: 1.1em;
-    font-variant:inherit;
-    font-style: normal;
-    font-weight: bolder;
-    color: #c0262c;
-    padding: 0;
+    font-size: 1.1em; /*Altera o tamanho e o espaçamento do texto*/
+    font-variant:inherit; /*Aplica diferentes fontes tipograficas do texto*/
+    font-style: normal; /*Editao estilo do texto para normal*/
+    font-weight: bolder; /*Está definindo que o texto deve ser mais expesso do que o elemento pai*/
+    color: #c0262c; /*Altera a cor do texto para vermelho*/
+    padding: 0; /*Retira todos os espaçamentos do elemento fonte e as bordas*/
 }
 .anuncioAnime .boxAnuncio p:hover {
     background-color: rgba(255, 255, 255, 0.7);
